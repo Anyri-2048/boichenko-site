@@ -1,0 +1,39 @@
+/* Immagine principale (es. Olena) */
+.profile-image {
+    width: 200px;
+    max-width: 5o%;
+    height: auto;
+    border-radius: 2rem; /* bordi morbidi */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* ombra leggera */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.02); /* effetto zoom morbido */
+  }
+  
+  /* Logo */
+  .logo {
+    width: 120px;
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%; /* rotondo */
+    border: 2px solid #e0e0e0; /* bordo leggero */
+    padding: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive per schermi piccoli */
+  @media (max-width: 768px) {
+    .profile-image,
+    .logo {
+      width: 200px;
+    }
+  }
+  

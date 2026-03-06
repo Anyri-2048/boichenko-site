@@ -1,0 +1,90 @@
+.about-section {
+  padding: 40px 20px;
+  background-color: #f5f5f0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction:row-reverse; /* testo sinistra, immagine destra */
+  gap: 40px;
+  max-width: 1800px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* TESTO */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  color: #333;
+}
+
+/* IMMAGINE */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0.9; /* leggera trasparenza */
+}
+
+/* Effetto sfumatura lato sinistro */
+.about-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 240, 1),
+    rgba(245, 245, 240, 0)
+  );
+  border-radius: 10px;
+}
+
+/* TITOLI */
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.about-text h3 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.quote {
+  font-style: italic;
+  color: #666;
+}
+
+.frankl {
+  font-weight: 500;
+  color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image::before {
+    display: none; /* niente sfumatura su mobile */
+  }
+}
