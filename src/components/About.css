@@ -4,38 +4,29 @@
 }
 
 .about-container {
-  display: flex;
-  flex-direction:row-reverse; /* testo sinistra, immagine destra */
-  gap: 40px;
-  max-width: 1800px;
+  max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
-}
-
-/* TESTO */
-.about-text {
-  flex: 1;
-  min-width: 300px;
-  color: #333;
 }
 
 /* IMMAGINE */
 .about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  float: right;
+  width: 55%;          /* più grande */
+  max-width: 600px;    /* limite massimo */
+  margin: 40px 0 20px 40px; /* abbassata per allinearla al testo */
   position: relative;
 }
 
+/* IMMAGINE STILE */
 .about-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  opacity: 0.9; /* leggera trasparenza */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  opacity: 0.95;
 }
 
-/* Effetto sfumatura lato sinistro */
+/* SFUMATURA LATO SINISTRO */
 .about-image::before {
   content: "";
   position: absolute;
@@ -48,7 +39,12 @@
     rgba(245, 245, 240, 1),
     rgba(245, 245, 240, 0)
   );
-  border-radius: 10px;
+  border-radius: 12px;
+}
+
+/* TESTO */
+.about-text {
+  color: #333;
 }
 
 /* TITOLI */
@@ -61,13 +57,17 @@
 .about-text h3 {
   margin-top: 20px;
   font-size: 22px;
+  color: #444;
 }
 
+/* PARAGRAFI */
 .about-text p {
   line-height: 1.6;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 
+/* CITAZIONE */
 .quote {
   font-style: italic;
   color: #666;
@@ -76,15 +76,36 @@
 .frankl {
   font-weight: 500;
   color: #777;
+  margin-bottom: 20px;
+}
+
+/* LISTE */
+.about-text ul {
+  padding-left: 20px;
+}
+
+.about-text li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* CLEAR FLOAT */
+.about-container::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
+  .about-image {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0;
   }
 
   .about-image::before {
-    display: none; /* niente sfumatura su mobile */
+    display: none;
   }
 }

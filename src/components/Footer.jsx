@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="footer-info">
         <p>© {new Date().getFullYear()} Бойченко Олена – психолог. Всі права захищені.</p>
         <p>
-        <a href="/privacy.html">Політика конфіденційності</a>
+        <a href="/privacy.html" target="_blank" rel="noopener noreferrer"> Політика конфіденційності</a>
          <a href="/cookies.html">Політика файлів cookie</a>
         </p>
       </div>
