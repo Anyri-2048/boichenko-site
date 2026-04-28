@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/boichenko-site/static/css/main.f3a6756b.css",
-    "main.js": "/boichenko-site/static/js/main.0276199d.js",
+    "main.css": "/boichenko-site/static/css/main.003648f9.css",
+    "main.js": "/boichenko-site/static/js/main.a2a648c9.js",
     "static/js/453.f24d32f3.chunk.js": "/boichenko-site/static/js/453.f24d32f3.chunk.js",
     "static/media/olena.jpg": "/boichenko-site/static/media/olena.dadc0c0ffd12fadcc5e1.jpg",
     "index.html": "/boichenko-site/index.html",
-    "main.f3a6756b.css.map": "/boichenko-site/static/css/main.f3a6756b.css.map",
-    "main.0276199d.js.map": "/boichenko-site/static/js/main.0276199d.js.map",
+    "main.003648f9.css.map": "/boichenko-site/static/css/main.003648f9.css.map",
+    "main.a2a648c9.js.map": "/boichenko-site/static/js/main.a2a648c9.js.map",
     "453.f24d32f3.chunk.js.map": "/boichenko-site/static/js/453.f24d32f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3a6756b.css",
-    "static/js/main.0276199d.js"
+    "static/css/main.003648f9.css",
+    "static/js/main.a2a648c9.js"
   ]
 }
